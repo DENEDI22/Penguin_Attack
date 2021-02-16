@@ -459,6 +459,17 @@
                 },
                 {
                     "name": "",
+                    "id": "2406c72e-319b-4e53-a18d-c31425504f4a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardAndMouse",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f40c006d-c5a4-468a-aaad-877acf013f65",
                     "path": "*/{Cancel}",
                     "interactions": "",
@@ -471,7 +482,7 @@
                 {
                     "name": "",
                     "id": "111ba1ca-0321-4c9a-88ae-a421fbaa5747",
-                    "path": "<Mouse>/position",
+                    "path": "<Pointer>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse;KeyboardAndMouse",
@@ -507,7 +518,7 @@
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse;KeyboardAndMouse",
+                    "groups": "Keyboard&Mouse",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -541,6 +552,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "XR",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72196599-fdf8-4a9f-a2ea-176b6671eec5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardAndMouse",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -632,6 +654,11 @@
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
                     "isOptional": false,
                     "isOR": false
                 }
