@@ -26,6 +26,12 @@ MonoBehaviour:
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
+  tint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
   maxFogDistance:
     m_OverrideState: 0
     m_Value: 5000
@@ -104,14 +110,14 @@ MonoBehaviour:
     min: 0
     max: 360
   skyIntensityMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   exposure:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: 8.69
   multiplier:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 1503.9
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
@@ -121,8 +127,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {x: 0.18750614, y: 0.29181972, z: 0.5}
   desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
+    m_OverrideState: 1
+    m_Value: 19997.28
   updateMode:
     m_OverrideState: 0
     m_Value: 0

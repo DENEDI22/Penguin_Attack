@@ -18,7 +18,7 @@ MonoBehaviour:
   m_DefaultDXRScenePrefabSaved: {fileID: 4798200196228829883, guid: 1a66683fb4d136e46b01932ab464efea,
     type: 3}
   m_ProjectSettingFolderPath: HDRPDefaultResources
-  m_WizardPopupAtStart: 1
+  m_WizardPopupAtStart: 0
   m_WizardPopupAlreadyShownOnce: 0
   m_WizardActiveTab: 2
   m_WizardNeedRestartAfterChangingToDX12: 0
