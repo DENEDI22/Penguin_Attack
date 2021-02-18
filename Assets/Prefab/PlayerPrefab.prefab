@@ -771,7 +771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8969905392725108831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.377, y: -0.03, z: 0.178}
   m_LocalScale: {x: 0.41945, y: 0.41945, z: 0.41945}
   m_Children:
   - {fileID: 5640665655815238085}
@@ -805,7 +805,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: c12bde6690df4a64fa3324a4a34e57dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -979,6 +979,7 @@ MonoBehaviour:
   - {fileID: 2901201737114704669}
   - {fileID: 4730529450995520902}
   pauseMenu: {fileID: 8969905393540661483}
+  currentWeaponPlace: {fileID: 0}
 --- !u!114 &4378593507877226820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1212,7 +1213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 423, y: 50.7}
+  m_AnchoredPosition: {x: 423, y: 50.69995}
   m_SizeDelta: {x: -1359.5168, y: -602.985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8969905393540661486
@@ -1406,7 +1407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8969905394194960955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.677, y: 7.849, z: 100.937}
+  m_LocalPosition: {x: -37.1528, y: 9.5, z: 98.068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8969905392736686521}

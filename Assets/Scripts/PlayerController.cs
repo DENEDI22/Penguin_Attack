@@ -10,11 +10,13 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private float rotationSpeed = 40f;
 	[SerializeField] private GameObject[] playerSkins;
 	[Header("GlobalGUI")] [SerializeField] private GameObject pauseMenu;
+	public WeaponPlace currentWeaponPlace;
 	private Rigidbody playerRb;
 	private PlayerInput m_playerInput;
 	private GameManager m_gameManager;
 	private bool m_isGamePausedByThisPlayer;
 	private float timeScaleBeforePause;
+
 	private void Awake()
 	{
 		playerRb = GetComponent<Rigidbody>();
@@ -22,7 +24,7 @@ public class PlayerController : MonoBehaviour
 		m_gameManager = FindObjectOfType<GameManager>();
 		playerSkins[m_playerInput.playerIndex].SetActive(true);
 	}
-	
+
 	public void OnPause()
 	{
 		if (!m_gameManager.GamePaused)
@@ -44,6 +46,11 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	public void OnShoot()
+	{
+		currentWeaponPlace.Shoot();
+	}
+	
 	private void Update()
 	{
 		var _movementVector = m_playerInput.actions.FindAction("Movement").ReadValue<Vector2>();
@@ -58,6 +65,11 @@ public class PlayerController : MonoBehaviour
 		else
 		{
 			playerRb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
+		}
+		
+		if (currentWeaponPlace)
+		{
+			currentWeaponPlace.RotateWeapon(m_playerInput.actions.FindAction("GunControl").ReadValue<Vector2>());
 		}
 	}
 
